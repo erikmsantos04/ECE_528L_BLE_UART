@@ -73,9 +73,9 @@ void P2_2_and_P2_3_Init()
 - Had to rebuild our bot because it got stolen (RIP).
 
 ## Author Contributions
-Code : Erik Santos and Daniel Adrayan
-Pre-Lab : Erik Santos
-Waveforms : Daniel Adrayan
+- Code : Erik Santos and Daniel Adrayan
+- Pre-Lab : Erik Santos
+- Waveforms : Daniel Adrayan
 
 ## References
 - Lab 4 Documentation
