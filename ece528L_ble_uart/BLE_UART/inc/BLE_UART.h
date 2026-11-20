@@ -21,7 +21,7 @@
  * @note For more information regarding the Enhanced Universal Serial Communication Interface (eUSCI),
  * refer to the MSP432Pxx Microcontrollers Technical Reference Manual
  *
- * @author
+ * @author Erik Santos
  *
  */
 
@@ -32,6 +32,41 @@
 #include <string.h>
 #include "msp.h"
 #include "Clock.h"
+
+/**
+ * @brief Specified the size of the buffer used for the BLE UART module
+ */
+#define BLE_UART_BUFFER_SIZE 128
+
+/**
+ * @brief Carriage return character
+ */
+#define CR 0x0D
+
+/**
+ * @brief Line feed character
+ */
+#define LF 0x0A
+
+/**
+ * @brief Back space character
+ */
+#define BS 0x08
+
+/**
+ * @brief escape character
+ */
+#define ESC 0x1B
+
+/**
+ * @brief space character
+ */
+#define SP 0x20
+
+/**
+ * @brief delete character
+ */
+#define DEL 0x7F
 
 void BLE_UART_Init();
 
@@ -46,5 +81,7 @@ void BLE_UART_OutString(char *pt);
 uint8_t Check_BLE_UART_Data(char BLE_UART_Data_Buffer[], char *data_string);
 
 void BLE_UART_Reset();
+
+int BLE_UART_InPacket(char *buffer_pointer, uint16_t buffer_size);
 
 #endif /* INC_BLE_UART_H_ */
