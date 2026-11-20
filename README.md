@@ -64,8 +64,10 @@ Section 4.1 - “Pin Diagrams” and Section 6.12.2 - “Port P2 (P2.0 to P2.3) 
 
 void P2_2_and_P2_3_Init()
 {
+
 	P2->SEL0 |= 0x0C;
 	P2->SEL1 &= ~0x0C;
+	
 }
 
 
