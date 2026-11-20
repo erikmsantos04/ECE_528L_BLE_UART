@@ -10,6 +10,10 @@ The Bluetooth Low Energy (BLE) lab interfaces with the following:
 * Pololu Gearmotor with Encoder - [Product Link](https://www.pololu.com/product/3675)
 * Adafruit Bluefruit LE UART Friend - Bluetooth Low Energy (BLE) Module - [Product Link](https://www.adafruit.com/product/2479)
 
+## Waveforms
+- Task 1
+- Task 2
+
 ## Pre-Lab
 
 1. What is Bluetooth Low Energy (BLE)? How does it differ from regular Bluetooth in terms of power consumption?
